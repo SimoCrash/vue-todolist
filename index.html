@@ -24,14 +24,14 @@
 <body>
     <div class="container" id="root">
         <div class="container-input">
-            <input type="text" placeholder="Aggiungi il Todo">
-            <button>Aggiungi</button>
+            <input type="text" placeholder="Aggiungi il Todo" v-model="newTodo">
+            <button @click="addTodo">Aggiungi</button>
         </div>
-        <h2>Non è presente nessun TODO</h2>
+        <h2 v-if="">Non è presente nessun TODO</h2>
         <div class="container-list">
             <ul class="style-list">
                 <li v-for="(todo, i) in todos">
-                    <span>{{ todo.text }}</span>
+                    <span v-cloak>{{ todo.text }}</span>
                 <i class="fa-solid fa-x" @click="deleteTodo(i)"></i>
                 </li>
             </ul>

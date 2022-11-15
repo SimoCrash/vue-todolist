@@ -53,6 +53,6 @@ h2 {
     display: block;
 }
 
-.actived {
-    text-decoration: line-through;
+[v-cloak] {
+    display: none;
 }

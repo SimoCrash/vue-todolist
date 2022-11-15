@@ -1,4 +1,4 @@
-new Vue ({
+const obj = new Vue ({
     el: "#root",
     data: {
         todos: [
@@ -8,16 +8,24 @@ new Vue ({
             },
             {
                 text: "lavare i piatti",
-                done: true,
+                done: false,
             },
             {
                 text: "lavare i panni",
                 done: true,
             },
-        ]
+        ],
+        newTodo: "",
+        
     },
-    
+
     methods: {
+        addTodo(){
+            this.todos.push(this.newTodo);
+            console.log(this.newTodo);
+            this.newTodo = "";
+        },
+
         deleteTodo(index){
             this.todos.splice(index, 1);
             // let arrExecuted = [];
@@ -32,7 +40,7 @@ new Vue ({
             //     ulList.append(liList);
             //     del.append(ulList);
             // }
-        }
+        },
     }
 }) 
 
