@@ -16,6 +16,7 @@ new Vue ({
             },
         ]
     },
+    
     methods: {
         deleteTodo(index){
             this.todos.splice(index, 1);
