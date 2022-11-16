@@ -49,10 +49,18 @@ h2 {
     cursor: pointer;
 }
 
-.active {
+.dBlock {
     display: block;
+}
+
+.dNone {
+    display: none;
 }
 
 [v-cloak] {
     display: none;
+}
+
+.classetta{
+    text-decoration: line-through;
 }

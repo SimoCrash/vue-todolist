@@ -3,17 +3,18 @@ const obj = new Vue ({
     data: {
         todos: [
             {
-                text: "comprare stendino",
+                text: "bestemmiare forte",
                 done: true,
             },
             {
-                text: "lavare i piatti",
+                text: "dioscanare",
                 done: false,
             },
             {
-                text: "lavare i panni",
+                text: "mandare tutto affanculo",
                 done: true,
             },
+
         ],
         newTodo: "",
         
@@ -21,7 +22,10 @@ const obj = new Vue ({
 
     methods: {
         addTodo(){
-            this.todos.push(this.newTodo);
+            this.todos.push({
+                text: this.newTodo,
+                done: false,
+            });
             console.log(this.newTodo);
             this.newTodo = "";
         },
