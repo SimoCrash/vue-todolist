@@ -3,15 +3,15 @@ const obj = new Vue ({
     data: {
         todos: [
             {
-                text: "bestemmiare forte",
+                text: "fare i compiti",
                 done: true,
             },
             {
-                text: "dioscanare",
+                text: "fare la spesa",
                 done: false,
             },
             {
-                text: "mandare tutto affanculo",
+                text: "pulire la stanza",
                 done: true,
             },
 
